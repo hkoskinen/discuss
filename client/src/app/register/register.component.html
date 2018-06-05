@@ -1,8 +1,15 @@
 <div>
-    <h1>Register</h1>
-    <form>
-      <input type="text" name="username">
-      <input type="password" name="password">
-      <button type="submit">Register</button>
+    <h1 style="text-align: center">Register</h1>
+    <form action="/register" method="post" class="container">
+      <mat-form-field>
+        <input type="text" placeholder="Username" name="username" matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="password" placeholder="Password" name="password" matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="password" placeholder="Password Again" name="password-again" matInput>
+      </mat-form-field>
+      <button type="submit" mat-raised-button>Register</button>
     </form>
   </div>

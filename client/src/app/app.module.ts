@@ -12,6 +12,8 @@ import { TopicsComponent } from './topics/topics.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TopicService } from './services/topic.service';
 import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { UserService } from './services/user.service';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [TopicService, UserService],
   bootstrap: [AppComponent]

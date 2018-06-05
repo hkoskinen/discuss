@@ -18,6 +18,7 @@ export class TopicsComponent implements OnInit {
   }
 
   getTopics(): void {
-    this.topics = this.topicService.getTopics();
+    this.topicService.getTopicsHttp()
+      .subscribe(topics => this.topics = topics);
   }
 }

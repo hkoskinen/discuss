@@ -1,6 +1,17 @@
-<div>
+<div class="container">
+  <h1>Topics</h1>
+
   <div *ngFor="let topic of topics">
     <h2>{{topic.title}}</h2>
     <p>{{topic.body}}</p>
   </div>
+
+  <div>
+    <form (submit)="onSubmit()">
+      <input type="text" placeholder="Your topic title">
+      <input type="text" placeholder="Your topic body">
+      <button mat-button >Add New Topic</button>
+    </form>
+  </div>
+
 </div>

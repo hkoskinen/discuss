@@ -1,12 +1,13 @@
 <div>
-  <h1>Login</h1>
-  <form class="">
-    <mat-form-field class="">
-      <input matInput name="username" placeholder="username" value="">
+  <h1 style="text-align: center">Login</h1>
+  <form class="container" novalidate (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+    <mat-form-field>
+      <input type="text" placeholder="Username" name="username" matInput ngModel required>
     </mat-form-field>
-    <mat-form-field class="">
-        <input matInput name="password" placeholder="password" type="password" value="">
-      </mat-form-field>
-    <button type="submit" mat-button>Send</button>
+    <mat-form-field>
+      <input type="password" placeholder="Password" name="password" matInput ngModel required>
+    </mat-form-field>
+    <button type="submit" [disabled]="loginForm.invalid" mat-raised-button>Send</button>
+    <p>{{ loginForm.value | json }}</p>
   </form>
 </div>

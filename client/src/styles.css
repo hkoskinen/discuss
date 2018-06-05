@@ -1,4 +1,4 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 html {
   box-sizing: border-box;
@@ -14,4 +14,11 @@ body {
   font-family: sans-serif;
   color: #454545;
   font-weight: 100;
+}
+
+
+.container {
+  border: 1px solid lightgrey;
+  max-width: 800px;
+  margin: 2em auto;
 }
