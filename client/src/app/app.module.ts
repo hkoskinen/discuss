@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { TopicsComponent } from './topics/topics.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { TopicService } from './services/topic.service';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     MaterialModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [TopicService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
