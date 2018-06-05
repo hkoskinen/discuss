@@ -1,5 +1,17 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
+  font-family: sans-serif;
+  color: #454545;
+  font-weight: 100;
 }
